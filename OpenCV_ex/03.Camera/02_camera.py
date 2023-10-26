@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 # Read from the first camera device
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(0)
 
 topLeft = (50, 50)
 bottomRight = (300, 300)

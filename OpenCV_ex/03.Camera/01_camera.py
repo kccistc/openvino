@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 # Read from the first camera device
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(0)
 
 w = 640#1280#1920
 h = 480#720#1080
