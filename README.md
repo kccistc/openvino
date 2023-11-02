@@ -32,7 +32,23 @@ python3 -m pip install --upgrade pip
 pip install openvino openvino-dev
 pip install -r demos/requirements.txt
 ```
-3. Build c++ demo samples
+3. Modify code to replace GStreamer with V4L2 as webcam backbone
+```diff
+diff --git a/demos/common/cpp/utils/src/images_capture.cpp b/demos/common/cpp/utils/src/images_capture.cpp
+index 8a205fc64..fefcb1463 100644
+--- a/demos/common/cpp/utils/src/images_capture.cpp
++++ b/demos/common/cpp/utils/src/images_capture.cpp
+@@ -240,7 +240,7 @@ public:
+             throw std::runtime_error("readLengthLimit must be positive");
+         }
+         try {
+-            if (cap.open(std::stoi(input))) {
++            if (cap.open(std::stoi(input), cv::CAP_V4L2)) {
+                 this->readLengthLimit = loop ? std::numeric_limits<size_t>::max() : readLengthLimit;
+                 cap.set(cv::CAP_PROP_BUFFERSIZE, 1);
+                 cap.set(cv::CAP_PROP_FRAME_WIDTH, cameraResolution.width);
+```
+4. Build c++ demo samples
 ```sh
 cd demos
 source /opt/intel/openvino_2023.1.0/setupvars.sh
