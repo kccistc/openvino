@@ -24,6 +24,7 @@ git clone --recurse-submodules https://github.com/openvinotoolkit/open_model_zoo
 ```
 2. Install Required packages
 ```sh
+sudo apt install libopencv-dev
 cd open_model_zoo
 python3 -m venv omz_venv
 source omz_venv/bin/activate
