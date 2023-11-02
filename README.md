@@ -115,7 +115,7 @@ python3 bert_question_answering_demo.py \
 ### Practice #7 - segmentation_demo
 
 ### (Optional) Practice #8
-* 위 데모 실행을 shell script 로 작성해 싫행
+* 위 데모 실행을 shell script 로 작성해 실행
 * 작성한 shell script 실행 시 device 를 parameter 를 받아 CPU or GPU 로 inference 되도록 수정
 ```sh
 # example
