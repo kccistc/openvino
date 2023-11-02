@@ -142,3 +142,5 @@ $ run.sh CPU # <<-------- CPU 에서 실행
 https://huggingface.co/docs/optimum/intel/inference
 $ run.sh GPU # <<-------- GPU 에서 실행
 ```
+## Hugging Face
+https://huggingface.co/docs/optimum/intel/inference
