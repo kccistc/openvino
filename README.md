@@ -137,5 +137,8 @@ python3 bert_question_answering_demo.py \
 ```sh
 # example
 $ run.sh CPU # <<-------- CPU 에서 실행
+
+## Hugging Face + Openvino
+https://huggingface.co/docs/optimum/intel/inference
 $ run.sh GPU # <<-------- GPU 에서 실행
 ```
