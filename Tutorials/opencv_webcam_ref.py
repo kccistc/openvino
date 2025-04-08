@@ -21,7 +21,7 @@ if not cap.isOpened():
 
 # Create Window
 cv2.namedWindow(WINDOW_TITLE, cv2.WINDOW_NORMAL | cv2.WINDOW_GUI_NORMAL)
-#cv2.setWindowProperty("WINDOW_TITLE", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+#cv2.setWindowProperty(WINDOW_TITLE, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
 # Resize Window Size
 cv2.resizeWindow(WINDOW_TITLE, WINDOW_W, WINDOW_H)
